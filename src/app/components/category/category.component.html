@@ -1,0 +1,13 @@
+<h2 class="categories-title">Categories</h2>
+
+<div class="categories-container">
+  @for (category of categories; track category.id) {
+    <div class="category-card">
+      <img [src]="category.image" alt="category image" class="category-image">
+      <div class="category-content">
+        <h3 class="category-name">{{ category.name }}</h3>
+        <p class="category-description">{{ category.description }}</p>
+      </div>
+    </div>
+  }
+</div>
